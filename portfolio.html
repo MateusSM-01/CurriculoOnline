@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Souza - Portfolio Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
+    <style>
+        /* Moved styles from the body to this style block */
+        .imagemPrincipal {
+            border-radius: 50px;
+            cursor: pointer;
+            text-align: center; /* Center the image horizontally */
+            margin-bottom: 20px; /* Add some space between images */
+        }
+
+        .imagemPrincipal img {
+            max-width: 100%; /* Make sure the image doesn't overflow */
+            border-radius: 50px;
+        }
+
+        .imagemSegunda {
+            border-radius: 50px;
+            cursor: pointer;
+            text-align: center; /* Center the image horizontally */
+        }
+
+        .imagemSegunda img {
+            max-width: 100%; /* Make sure the image doesn't overflow */
+            border-radius: 50px;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 600px) {
+            .imagemPrincipal,
+            .imagemSegunda {
+                margin-left: auto; /* Center the images vertically on small screens */
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navigation" class="navigation">
+        <!-- Navigation menu -->
+    </div>
+
+    <div class="main">
+        <!-- Breadcrumb -->
+        <ul class="caminho">
+            <!-- Breadcrumb items -->
+        </ul>
+
+        <h1>PORTFÓLIO</h1>
+
+        <!-- First image with anchor tag -->
+        <div class="imagemPrincipal">
+            <a href="portfólio2.html">
+                <img id="imagemPrincipal" width="300" height="270" src="img/foto18.png" alt="Imagem Principal" onclick="irParaIndex()">
+            </a>
+            <h2 class="hh">NOW IS THE TIME</h2>
+        </div>
+
+        <!-- Second image with anchor tag -->
+        <div class="imagemSegunda">
+            <a href="portfóliobanco.html">
+                <img id="imagemSegunda" width="280" height="250" src="img/foto131.png" alt="Imagem Principal" onclick="irParaIndex()">
+            </a>
+            <h2 class="hhh">BANCO DE DADOS</h2>
+        </div>
+
+        <br><br><br>
+        <a href="index.html" class="b">Voltar ao início</a>
+    </div>
+</body>
+
+</html>
